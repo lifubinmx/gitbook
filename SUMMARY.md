@@ -1,2 +1,1 @@
-# SUMMARY
-* [ Linux ] (linux.md)
+
