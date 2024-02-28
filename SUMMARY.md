@@ -1,27 +1,3 @@
 # Table of contents
 
-* [欢迎](README.md)
-
-## 起步
-* [测试](a.md)
-  * [linux](aa/linux.md)
-* [Page 1](page-1.md)
-
-
-
-* [Page 2](group-1/page-2.md)
-
-## CentOS
-
-* [Page 3](group-2/page-3.md)
-
-## aaa
-* [Page 2](group-1/page-a.md)
-
-## bbb
-* [Page 2](group-1/page-b.md)
-
-## ccc
-* [Page 2](group-1/page-c.md)
-  * [baidu](https://www.baidu.com)
-  * [axbsec](https://www.axbsec.com)
+* [在k3s上使用helm方式安装rancher](rancher_install.md)
