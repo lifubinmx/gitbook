@@ -68,19 +68,16 @@ helm install rancher rancher-latest/rancher \
 
 
 
-##  修改svc/rancher服务类型
+##  获取rancher服务NodePort
 
 ```bash
-# 编辑rancher服务，修改Type为NodePort
-kubectl edit svc rancher -n cattle-system
-
-# 获取rancher服务的NodePort
+# 获取rancher服务的NodePort用于配置nginx反向代理
 kubectl get svc/rancher -n cattle-system
 NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE
 rancher   NodePort   10.43.195.230   <none>        80:32212/TCP,443:31766/TCP   50m
 ```
 
-## 添加nginx反向代理
+## 配置nginx反向代理
 
 
 
