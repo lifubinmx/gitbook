@@ -30,6 +30,12 @@ curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 |
 
 ## 安装cert-manager 
 
+>   此部分为可选安装：
+>
+>   如果需要通过直接在k3s集群中部署https的Ingress方式进行访问rancher服务，则需要安装在k3s中安装cert-manager用于实现域名证书签发；
+>
+>   如果要在k3s前部署Nginx实现代理访问，https证书配置在Nginx上，此处则不需要安装cert-manager
+
 ```bash
 # 添加仓库
 helm repo add jetstack https://charts.jetstack.io
@@ -38,13 +44,14 @@ helm repo add jetstack https://charts.jetstack.io
 helm repo update
 
 # 安装cert-manager crds资源清单
-kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.4/cert-manager.crds.yaml
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.3/cert-manager.crds.yaml
 
 # 安装cert-manager
 helm install cert-manager \
 jetstack/cert-manager \
 --namespace cert-manager \
 --create-namespace
+# --set installCRDs=true
 ```
 
 ## 安装rancher
