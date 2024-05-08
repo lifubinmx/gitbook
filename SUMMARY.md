@@ -1,6 +1,17 @@
 # Table of contents
 
-* [在k3s上使用helm方式安装rancher](k3s/README.md)
+* [欢迎](README.md)
 
-** 标题
-*** 标题2
+## Group 1
+
+* [Page 1](group-1/page-1.md)
+
+## Group 2
+
+* [Page 2](group-2/page-2.md)
+* [Page](group-2/page/README.md)
+  * [Page 3](group-2/page/page-3.md)
+
+***
+
+* [baidu](https://www.baidu.com)
