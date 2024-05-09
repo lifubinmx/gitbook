@@ -8,9 +8,9 @@
 
 ## 其它
 
-* [iptables](k3s/README.md)
-* [NAT](k3s/README.md)
-  * [SNAT](k3s/README.md)
+* [iptables](iptables/README.md)
+* [NAT](nat/README.md)
+  * [SNAT](snat/README.md)
 
 ## 链接
 
